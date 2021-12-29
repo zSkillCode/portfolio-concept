@@ -1,0 +1,35 @@
+.footer {
+    position: relative;
+    grid-column: col-start 1 / -1;
+    height: 20rem;
+    background-color: $color-primary-light;
+
+    &__text {
+        display: block;
+        text-align: center;
+        color: $color-grey-light-1;
+        font-size: 2rem;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.custom-shape-divider-top-1640817271 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1640817271 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 172px;
+}
+
+.custom-shape-divider-top-1640817271 .shape-fill {
+    fill: #1F222E;
+}

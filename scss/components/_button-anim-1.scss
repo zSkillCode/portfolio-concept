@@ -1,0 +1,76 @@
+.btn-anim-1 {
+    position: relative;
+    overflow: hidden;
+    transition: transform .3s;
+    z-index: 10;
+
+
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        border-radius: 10px;
+
+        font-size: 2rem;
+
+
+        .btn-anim__text {
+            position: relative;
+            z-index: 1;
+            text-transform: uppercase;
+            font-weight: 100;
+            user-select: none;
+            transition: color .3s ease-in;
+
+            &--gl-tl {
+                color: $color-grey-light-1;
+            }
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transition: transform .4s cubic-bezier(0.36, 0, 0.66, -0.56);
+        }
+
+        &::before {
+            background-image: linear-gradient(135deg, transparent 0%, transparent 50%, $color-primary-dark 50%);
+            transform: translateX(50%);
+        }
+
+        &::after {
+            background-image: linear-gradient(315deg, transparent 0%, transparent 50%, $color-primary-light 50%);
+            transform: translateX(-50%);
+        }
+    }
+
+    &--sec {
+        &:link,
+        &:active {
+            background-image: linear-gradient(120deg, $color-secondary-dark, $color-secondary-light);
+        }
+    }
+
+    &:hover,
+    &:active {
+        transform: scale(1.05);
+
+        .btn-anim__text {
+            &--gl-tl {
+                color: $color-tertiary-light;
+            }
+        }
+
+        &::before,
+        &::after {
+            transform: translateX(0);
+        }
+    }
+}

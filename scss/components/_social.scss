@@ -1,0 +1,21 @@
+.social {
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__icon {
+        font-size: 4rem;
+        margin: 0 2rem;
+        color: $color-grey-light-1;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        &__discord-iframe {
+            display: none;
+        }
+    }
+}
+
+

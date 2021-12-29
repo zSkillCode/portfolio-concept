@@ -1,0 +1,22 @@
+.personal-info {
+    &__list {
+        list-style: none;
+        text-align: left;
+        margin-left: 5rem;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-left: 2rem;
+        }
+    }
+
+    &__item {
+        font-size: 2rem;
+        margin: .5rem 0;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    .icon {
+        color: $color-secondary-light;
+    }
+}
