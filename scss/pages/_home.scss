@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: minmax(55rem, 100vh);
+    grid-template-rows: minmax(55rem, 90vh);
     grid-template-columns: repeat(8, [col-start] 1fr [col-end]);
 }
 
@@ -38,6 +38,11 @@
         display: block;
         width: calc(134% + 1.3px);
         height: 188px;
+
+        @media only screen and (max-width: $bp-small) {
+            width: calc(150% + 1.3px);
+            height: 150px;
+        }
     }
 
     .custom-shape-divider-bottom-1640786507 .shape-fill {

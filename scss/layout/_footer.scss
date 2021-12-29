@@ -1,15 +1,18 @@
 .footer {
     position: relative;
     grid-column: col-start 1 / -1;
-    height: 20rem;
+    height: 30rem;
     background-color: $color-primary-light;
+    text-align: center;
 
     &__text {
+        width: 100%;
+        position: absolute;
+        bottom: 3em;
         display: block;
         text-align: center;
         color: $color-grey-light-1;
         font-size: 2rem;
-        position: relative;
         z-index: 1;
     }
 }

@@ -40,6 +40,14 @@
 
 .fs-medium {
     font-size: 4rem !important;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 3rem !important;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 2rem !important;
+    }
 }
 
 .fs-large {
@@ -49,3 +57,4 @@
 .fs-huge {
     font-size: 8rem !important;
 }
+

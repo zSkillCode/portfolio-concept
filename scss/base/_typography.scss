@@ -15,6 +15,14 @@ body {
     font-size: 15rem;
     line-height: 1;
     color: $color-grey-light-1;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 12rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 8rem;
+    }
 }
 
 .stroke {
@@ -33,6 +41,15 @@ body {
     user-select: none;
     text-transform: uppercase;
     font-size: 7rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 3rem;
+    }
+
     font-weight: 100;
     letter-spacing: 1.3rem;
 
