@@ -1,6 +1,11 @@
 .container {
     display: grid;
-    grid-template-rows: minmax(55rem, 90vh);
+    grid-template-rows: 70rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: 50rem;
+    }
+
     grid-template-columns: repeat(8, [col-start] 1fr [col-end]);
 }
 

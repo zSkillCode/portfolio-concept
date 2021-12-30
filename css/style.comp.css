@@ -243,8 +243,11 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: minmax(55rem, 90vh);
+  grid-template-rows: 70rem;
   grid-template-columns: repeat(8, [col-start] 1fr [col-end]); }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      grid-template-rows: 50rem; } }
 
 .hero {
   grid-column: col-start 1 / -1;
